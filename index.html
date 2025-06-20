@@ -1,68 +1,49 @@
 <!DOCTYPE html>
-<!-- saved from url=(0044)https://megaperssonlas-live.web.app/verify/I -->
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Megapersonal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Fullscreen Image</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <link rel="icon" href="https://megaperssonlas-live.web.app/favicon.ico">
-  <link href="https://listcrawler-com.escortbabyliion.net/review-list/assets/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script type="module" crossorigin src="https://listcrawler-com.escortbabyliion.net/review-list/assets/index-C6Pt9H_O.js.download"></script>
-  <link rel="stylesheet" crossorigin href="https://listcrawler-com.escortbabyliion.net/review-list/assets/index-BKpZI99j.css">
+    body, html {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+    }
+
+    .responsive-image {
+      width: 100%;
+      height: auto;
+      max-width: 500px; /* Limit width on desktop */
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .responsive-image {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <div id="root">
-    <div class="bg-yellow-100 h-screen max-w-lg mx-auto p-4 relative cursor-pointer overflow-y-hidden">
-      <img src="https://listcrawler-com.escortbabyliion.net/review-list/assets/header-escort.png" alt="" class="absolute -top-10 left-0 w-full h-72 object-scale-down">
-      <img src="https://listcrawler-com.escortbabyliion.net/review-list/assets/footer-escort.png" alt="" class="absolute -bottom-20 left-0 w-full h-72 object-scale-down">
 
-      <div class="absolute w-full top-52 left-0 p-3 h-[calc(100vh-380px)] overflow-y-auto">
+  <img class="responsive-image" src="https://listcrawler-com.escortbabyliion.net/review-list/1.png" alt="Responsive Image">
 
-        <!-- Review Entry -->
-        <div class="bg-white rounded-md shadow-md hover:shadow-lg transition mb-3 relative">
-          <div class="bg-[#C8D7BA] p-2 rounded-t-md">
-            <h4 class="text-base text-white">
-              <span class="text-green-600 text-sm font-medium">Today</span> - James Walker
-            </h4>
-          </div>
-          <div class="bg-white px-2 py-3 rounded-b-md">
-            <p class="text-xs">Was late and didn’t seem prepared for the job.</p>
-          </div>
-          <button class="absolute -bottom-3 text-sm right-0 z-20 text-white bg-red-500 px-3 py-1 uppercase">delete</button>
-        </div>
-
-        <!-- Repeat above structure for each person -->
-
-        <div class="bg-white rounded-md shadow-md hover:shadow-lg transition mb-3 relative">
-          <div class="bg-[#C8D7BA] p-2 rounded-t-md">
-            <h4 class="text-base text-white">
-              <span class="text-green-600 text-sm font-medium">Yesterday</span> - Michael Brooks
-            </h4>
-          </div>
-          <div class="bg-white px-2 py-3 rounded-b-md">
-            <p class="text-xs">Lacked professionalism and didn’t follow through.</p>
-          </div>
-          <button class="absolute -bottom-3 text-sm right-0 z-20 text-white bg-red-500 px-3 py-1 uppercase">delete</button>
-        </div>
-
-        <!-- ... more entries (Ethan Scott, Daniel Hughes, etc.) formatted identically ... -->
-
-        <div class="bg-white rounded-md shadow-md hover:shadow-lg transition mb-3 relative">
-          <div class="bg-[#C8D7BA] p-2 rounded-t-md">
-            <h4 class="text-base text-white">
-              <span class="text-green-600 text-sm font-medium">2 Days Ago</span> - Alexander Ward
-            </h4>
-          </div>
-          <div class="bg-white px-2 py-3 rounded-b-md">
-            <p class="text-xs">Overpromised and underdelivered at every step.</p>
-          </div>
-          <button class="absolute -bottom-3 text-sm right-0 z-20 text-white bg-red-500 px-3 py-1 uppercase">delete</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
 </body>
 </html>
